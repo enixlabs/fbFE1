@@ -1,0 +1,19 @@
+{
+  "projects": {
+    "default": "nxie-1b1d1"
+  },
+  "targets": {
+    "nxie-1b1d1": {
+      "hosting": {
+        "fbFE1": [
+          "nxie"
+        ]
+      }
+    }
+  },
+  "etags": {
+    "nxie-1b1d1": {
+      "extensionInstances": {}
+    }
+  }
+}

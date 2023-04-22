@@ -1,0 +1,36 @@
+<mat-sidenav-container>
+  <mat-sidenav
+    #sideNavLeft
+    opened="true"
+    class="bg-gray-900 text-white"
+    *ngIf="authenticated()"
+  >
+    <ng-container>
+      <mat-card class="profile_card">
+        <mat-card-title class="p-2">
+          <mat-chip-avatar class="user_avatar">
+            <img matChipAvatar src="assets/images/logo/nxie.logo.png" alt="Nxie Logo"/>
+          </mat-chip-avatar>
+          <span class="profile_name">{{ user?.username }}</span>
+        </mat-card-title>
+      </mat-card>
+
+      <!--USER MENU-->
+      <ng-container *ngIf="menuItems">
+        <ul class="list text-start">
+          <li class="link" *ngFor="let menuItem of menuItems">
+            <mat-icon>{{ menuItem.icon }}</mat-icon>
+            <a class="pl-6" [routerLink]="menuItem.link">{{ menuItem.title }}</a>
+            <p>{{ menuItem.subtitle }}</p>
+          </li>
+        </ul>
+      </ng-container>
+    </ng-container>
+
+  </mat-sidenav>
+  <!--  <mat-sidenav #sideNavRight mode="side" position="end"></mat-sidenav>-->
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

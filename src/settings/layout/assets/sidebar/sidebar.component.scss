@@ -1,0 +1,52 @@
+mat-sidenav-container {
+  height: calc(100vh - 65px);
+  background-image: url("/assets/images/background/bg-fixed-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  mat-sidenav {
+    width: 250px;
+    text-align: center;
+    .profile_card {
+      padding: 20px 0;
+      background-color: transparent;
+      img {
+        width: 25%;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+      .profile_name {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 10px 0;
+      }
+      .profile_email {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    p {
+      font-size: 10px;
+    }
+    .list {
+      .link {
+        text-decoration: none;
+        padding: 10px 0 10px 20px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        &:hover {
+          background-color: rgb(255, 60, 0);
+        }
+        a:hover {
+          background-color: rgb(255, 60, 0);
+        }
+      }
+    }
+  }
+}
