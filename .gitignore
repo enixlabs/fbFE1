@@ -11,6 +11,7 @@ mobile
 packages
 docs
 resources
+functions/node_modules
 
 # Node
 /node_modules
