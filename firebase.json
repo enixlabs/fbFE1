@@ -1,12 +1,4 @@
 {
-  "hosting": {
-    "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  },
   "functions": [
     {
       "source": "functions",
@@ -16,9 +8,6 @@
         ".git",
         "firebase-debug.log",
         "firebase-debug.*.log"
-      ],
-      "predeploy": [
-        "npm --prefix \"$RESOURCE_DIR\" run build"
       ]
     }
   ],
@@ -28,6 +17,14 @@
   "firestore": {
     "rules": "firestore.rules",
     "indexes": "firestore.indexes.json"
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
   },
   "storage": {
     "rules": "storage.rules"
@@ -62,8 +59,8 @@
     },
     "singleProjectMode": true
   },
-  "extensions": {},
   "remoteconfig": {
     "template": "remoteconfig.template.json"
-  }
+  },
+  "extensions": {}
 }

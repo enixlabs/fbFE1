@@ -12,6 +12,7 @@ packages
 docs
 resources
 functions/node_modules
+src/environments
 
 # Node
 /node_modules
